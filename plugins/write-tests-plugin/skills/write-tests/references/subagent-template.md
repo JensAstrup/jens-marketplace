@@ -37,9 +37,10 @@ Follow these quality guidelines:
 ### 2. Run Tests for Your File
 
 After writing or updating tests:
-1. Run the test command for your specific test file (e.g., `pytest path/to/test_file.py`, `npm test -- path/to/test.js`)
+1. Run the test command for your specific test file with coverage (e.g., `pytest path/to/test_file.py --cov=path/to/source --cov-report=term-missing`, `yarn test -- path/to/test.js --coverage`)
 2. Capture the test output and results
 3. Check if all tests pass
+4. Check that code has full coverage
 
 ### 3. Fix Test Failures Iteratively
 
@@ -58,7 +59,18 @@ If tests fail:
 
 **Important**: Track your iteration count. After 5 attempts, stop and report back.
 
-### 4. Report Results
+### 4. Improve Coverage Iteratively
+
+If tests pass but coverage is incomplete:
+1. **Review the source code**: Identify branches, edge cases, or code paths that the coverage report marks as missing
+2. **Update the tests**: Add or adjust tests to cover the missing code
+3. **Re-run tests with coverage**: Execute the test command with coverage again
+4. **Repeat**: Continue this process no more than 5 times
+5. **If coverage is still missing after 5 attempts**: Stop and return results to the main agent using the same reporting template as in step 5 (Report Results)—include what coverage was achieved and what remains uncovered
+
+**Important**: Track your iteration count. After 5 attempts, stop and report back.
+
+### 5. Report Results
 
 **If all tests pass:**
 Return a success message with:
