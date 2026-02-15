@@ -1,0 +1,45 @@
+{
+  "name": "jens-marketplace",
+  "owner": {
+    "name": "Jens Astrup"
+  },
+  "description": "A collection of plugins for Jens' projects",
+  "repository": "https://github.com/jensastrup/jens-marketplace",
+  "homepage": "https://github.com/jensastrup/jens-marketplace",
+  "plugins": [
+    {
+      "name": "lint-changes",
+      "source": "./plugins/lint-changes-plugin",
+      "description": "Run linter on all staged and unstaged changes and fix all warnings/errors",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jens Astrup"
+      },
+      "keywords": [
+        "linting",
+        "code-quality",
+        "eslint",
+        "auto-fix",
+        "code-style",
+        "formatting",
+        "static-analysis"
+      ]
+    },
+    {
+      "name": "write-tests",
+      "source": "./plugins/write-tests-plugin",
+      "description": "Write or update tests for staged/unstaged changes or branch changes",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jens Astrup"
+      },
+      "keywords": [
+        "testing",
+        "test-coverage",
+        "test-automation",
+        "unit-tests"
+      ]
+    }
+  ],
+  "strict": false
+}
