@@ -1,6 +1,7 @@
 # Jens' Claude Code Plugin Marketplace
 
-A collection of Claude Code plugins designed to enhance your development workflow.
+A collection of Claude Code plugins designed to enhance your development workflow. Created to make my life easier
+when switching between devices.
 
 ## Installation
 
@@ -62,7 +63,7 @@ Write or update tests for your code changes with intelligent scope detection.
 - Analyzes your code changes and identifies files that need test coverage
 - Creates new test files or updates existing ones following your project's conventions
 - Spawns specialized test-writer agents to work in parallel
-- Runs the test suite to verify all tests pass
+- Runs the test suite to verify all tests pass and that full coverage is achieved
 
 **Usage:**
 
