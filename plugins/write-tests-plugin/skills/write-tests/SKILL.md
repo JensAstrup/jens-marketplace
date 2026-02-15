@@ -3,7 +3,7 @@ name: write-tests
 description: >-
   Create or update tests to reflect code changes. Use when the user asks to write tests for their changes, generate tests for a branch, ensure test coverage before merging a PR, or update existing tests to match code modifications.
 argument-hint: "[changes|branch]"
-allowed-tools: Bash(yarn test *)
+allowed-tools: Bash(yarn test *), Bash(npx jest *), Bash(npm test *), Bash(pytest *)
 ---
 
 # Write Tests

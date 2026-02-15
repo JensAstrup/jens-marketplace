@@ -6,7 +6,7 @@
 - Migrated from standalone skill to plugin format
 - Enhanced test coverage instructions and subagent workflow
 - Improved plugin coverage command reference
-- Updated allowed test command from `npm test` to `yarn test`
+- Updated allowed commands to cover multiple options
 
 ### Added
 - Support for `changes` and `branch` scopes
