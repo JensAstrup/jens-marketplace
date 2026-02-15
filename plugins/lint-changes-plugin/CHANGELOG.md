@@ -3,11 +3,13 @@
 ## 1.0.1 - 2026-02-15
 
 ### Changed
+
 - Improved skill description with trigger examples for better automatic invocation
 
 ## 1.0.0 - 2026-02-15
 
 ### Added
+
 - Initial release of lint-changes plugin
 - Skill to run linter on all staged and unstaged changes and auto-fix warnings/errors
 - Parallel subagent spawning for per-file lint fixes
