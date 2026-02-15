@@ -2,7 +2,7 @@
 name: write-tests
 description: Create or update tests to reflect code changes. Use when the user wants to generate/write tests for their changes (staged/unstaged) or for an entire feature branch, ensure test coverage, or update existing tests to match code modifications.
 argument-hint: "[changes|branch]"
-allowed-tools: Bash(npm test *)
+allowed-tools: Bash(yarn test *)
 ---
 
 # Write Tests
