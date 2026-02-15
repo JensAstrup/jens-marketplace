@@ -1,6 +1,7 @@
 ---
 name: lint-changes
-description: Run linter on all staged and unstaged changes and fix all warnings/errors
+description: >-
+  Run linter on all staged and unstaged changes and fix all warnings/errors. Use when the user asks to lint their changes, run the linter and fix errors, fix lint issues in staged files, or check changes for lint warnings.
 context: fork
 ---
 
