@@ -1,16 +1,12 @@
 # Changelog
 
-## 2.1.0 - 2026-02-15
-
-### Changed
-- Updated allowed test command from `npm test` to `yarn test`
-
 ## 2.0.0 - 2026-02-15
 
 ### Changed
 - Migrated from standalone skill to plugin format
 - Enhanced test coverage instructions and subagent workflow
 - Improved plugin coverage command reference
+- Updated allowed test command from `npm test` to `yarn test`
 
 ### Added
 - Support for `changes` and `branch` scopes

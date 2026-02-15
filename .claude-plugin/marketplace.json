@@ -11,7 +11,7 @@
       "name": "lint-changes",
       "source": "./plugins/lint-changes-plugin",
       "description": "Run linter on all staged and unstaged changes and fix all warnings/errors",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Jens Astrup"
       },

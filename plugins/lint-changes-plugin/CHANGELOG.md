@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 - 2026-02-15
+
+### Changed
+- Improved skill description with trigger examples for better automatic invocation
+
 ## 1.0.0 - 2026-02-15
 
 ### Added
