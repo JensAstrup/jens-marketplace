@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.0 - 2026-02-15
+
+### Changed
+- Pre-fetch staged and unstaged changes as inline context instead of requiring a runtime git command
+- `branch` scope now includes uncommitted changes in addition to committed branch changes
+
 ## 2.0.0 - 2026-02-15
 
 ### Changed
