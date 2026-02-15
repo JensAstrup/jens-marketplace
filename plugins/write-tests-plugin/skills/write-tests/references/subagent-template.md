@@ -37,11 +37,10 @@ Follow these quality guidelines:
 ### 2. Run Tests for Your File
 
 After writing or updating tests:
-1. Run the test command for your specific test file with coverage (e.g., `pytest path/to/test_file.py --cov=path/to/source --cov-report=term-missing`, `yarn test -- path/to/test.js --coverage`)
+1. Run the provided test command; enable coverage using the project's standard flags/config (e.g., pytest.ini, jest config)
 2. Capture the test output and results
 3. Check if all tests pass
 4. Check that code has full coverage
-
 ### 3. Fix Test Failures Iteratively
 
 If tests fail:
