@@ -54,7 +54,8 @@ If tests fail:
 3. **Fix the issue**: Update the test code to address the root cause
 4. **Re-run tests**: Execute the test command again
 5. **Repeat**: Continue this process up to 5 times
-6. **NEVER change the source code to fix test failures**
+6. **NEVER change the source code to fix test failures or for any other reason**
+   - If you believe changing the source code is required, request that the user provide explicit approval for the change
 
 **Important**: Track your iteration count. After 5 attempts, stop and report back.
 
