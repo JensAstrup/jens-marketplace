@@ -29,7 +29,7 @@
       "name": "write-tests",
       "source": "./plugins/write-tests-plugin",
       "description": "Write or update tests for staged/unstaged changes or branch changes",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "author": {
         "name": "Jens Astrup"
       },

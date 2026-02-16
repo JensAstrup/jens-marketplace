@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.2.0 - 2026-02-15
+
+### Changed
+
+- Improved result summary to use a table format with per-file test counts and pass/fail status
+- Updated failure messaging to reference subagents (plural) and suggest plan mode or agent teams for manual review
+
 ## 2.1.0 - 2026-02-15
 
 ### Changed
