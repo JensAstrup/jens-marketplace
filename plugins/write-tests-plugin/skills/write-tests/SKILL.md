@@ -96,11 +96,22 @@ Provide a summary that includes:
 
 - Scope used (changes or branch)
 - For branch scope: branch name and comparison base
-- Number of files changed
 - A **table** with one row per test file:
 
   | Test file path | Number of tests created/updated | Final State (pass or fail) |
   |----------------|----------------------------------|----------------------------|
+
+- Following the table, provide a list of key changes made to tests. 
+
+Example:
+
+```
+Key changes covered:
+  - QuickEntryCard refactored to fetch amounts from store internally (removed prop)
+  - Quick Add Dose functionality moved to HomeScreen with dose warning support
+  - Error handling updated to use captureException (Sentry) instead of console.error
+  - OTA update error toasts now include reloadApp action
+```
 
 - **If any test files have persistent failures**:
   - List each test file that still has failures
