@@ -41,15 +41,6 @@ Present the user with a numbered list of changes to be made. Each item should in
 
 Format:
 
-```
-PR: <title> (#<number>)
-
-Review comments to address:
-
-1. `src/components/Button.tsx` - Rename the `handleClick` prop to `onClick` for consistency with React conventions. (reviewer: @username)
-2. `src/utils/format.ts` - Add null check before calling `.toString()` to prevent runtime errors. (reviewer: @username)
-3. General - Update the PR description to include a test plan. (reviewer: @username)
-```
 
 Ask the user which changes they want to address. They can:
 - Approve all changes
