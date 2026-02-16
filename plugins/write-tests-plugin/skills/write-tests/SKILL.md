@@ -23,6 +23,11 @@ If `$ARGUMENTS[0]` is not provided or is neither `changes` nor `branch`, respond
 >
 > Which would you like?"
 
+---
+Staged and Unstaged Changes:
+! git diff --name-status HEAD
+---
+
 ## Workflow
 
 ### 1. Determine Scope and Analyze Changes
@@ -30,7 +35,7 @@ If `$ARGUMENTS[0]` is not provided or is neither `changes` nor `branch`, respond
 #### If `$ARGUMENTS[0]` == `changes`:
 
 Use git commands to identify all modified files:
-- Run `git diff --name-status HEAD` to see the names and status of all staged and unstaged changed files
+- Use the file names from "Staged and Unstaged Changes" above
 - Identify which files have been added, modified, or deleted
 - Determine the programming languages and frameworks in use
 
@@ -43,6 +48,7 @@ First, identify the branch context:
 
 Then, use git commands to identify all changes on the branch:
 - Run `git diff --name-status <default-branch>...HEAD` to see the names and status of all files changed by this branch
+- Use the file names from "Staged and Unstaged Changes" above as well
 - Identify which files have been added, modified, or deleted since branching
 - Determine the programming languages and frameworks in use
 
