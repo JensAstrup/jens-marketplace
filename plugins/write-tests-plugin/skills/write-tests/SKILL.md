@@ -92,18 +92,21 @@ Once all subagents have finished:
 
 ### 7. Report Results
 
-Provide a summary:
+Provide a summary that includes:
+
 - Scope used (changes or branch)
 - For branch scope: branch name and comparison base
 - Number of files changed
-- Number of test files created
-- Number of test files updated
-- Final test suite status (pass/fail)
+- A **table** with one row per test file:
+
+  | Test file path | Number of tests created/updated | Final State (pass or fail) |
+  |----------------|----------------------------------|----------------------------|
+
 - **If any test files have persistent failures**:
   - List each test file that still has failures
   - Include the failure messages from the subagent
-  - Explain that the subagent attempted to fix the failures 5 times but was unsuccessful
-  - Suggest the user manually review these test files
+  - Explain that the subagents attempted to fix the failures 5 times but were unsuccessful
+  - Suggest the user manually review these test files (suggest using plan mode or an agent team to investigate)
 
 ## Quality Guidelines
 
