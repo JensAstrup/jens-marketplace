@@ -39,6 +39,22 @@
         "test-automation",
         "unit-tests"
       ]
+    },
+    {
+      "name": "github",
+      "source": "./plugins/github-plugin",
+      "description": "Resolve PR review comments by implementing requested changes",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jens Astrup"
+      },
+      "keywords": [
+        "github",
+        "pull-request",
+        "code-review",
+        "pr-comments",
+        "review-feedback"
+      ]
     }
   ],
   "strict": false
