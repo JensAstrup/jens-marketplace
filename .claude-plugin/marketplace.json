@@ -55,6 +55,23 @@
         "pr-comments",
         "review-feedback"
       ]
+    },
+    {
+      "name": "codebase-research",
+      "source": "./plugins/codebase-research-plugin",
+      "description": "Specialized agents for exploring and understanding codebases - analyze implementations, locate files, and find patterns",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jens Astrup"
+      },
+      "keywords": [
+        "codebase",
+        "research",
+        "analysis",
+        "exploration",
+        "patterns",
+        "code-navigation"
+      ]
     }
   ],
   "strict": false
