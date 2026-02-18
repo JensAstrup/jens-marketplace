@@ -72,6 +72,22 @@
         "patterns",
         "code-navigation"
       ]
+    },
+    {
+      "name": "planner",
+      "source": "./plugins/planner-plugin",
+      "description": "Creates comprehensive implementation plans for Linear issues by researching the codebase, asking clarifying questions, and posting the plan as a comment",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jens Astrup"
+      },
+      "keywords": [
+        "planning",
+        "linear",
+        "implementation",
+        "engineering",
+        "project-management"
+      ]
     }
   ],
   "strict": false
