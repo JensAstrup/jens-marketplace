@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 - 2026-02-20
+
+### Changed
+
+- Added instruction to create a to-do list from workflow steps to ensure all steps are completed
+
 ## 1.0.0 - 2026-02-16
 
 ### Added

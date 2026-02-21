@@ -44,7 +44,7 @@
       "name": "github",
       "source": "./plugins/github-plugin",
       "description": "Resolve PR review comments by implementing requested changes",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Jens Astrup"
       },
