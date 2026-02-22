@@ -1,8 +1,8 @@
 ---
 name: address-comments
 description: >-
-  Resolve PR review comments by implementing requested changes. Use when the user asks to address PR comments, fix review feedback, resolve PR review comments, handle code review suggestions, or implement reviewer-requested changes. Examples: "Address the PR review comments", "Fix the review feedback on my PR", "Resolve the comments on my pull request", "Handle the code review suggestions".
-allowed-tools: Bash(gh pr *), Bash(gh api *), Bash(git *)
+  This skill should be used when the user asks to "address PR comments", "fix review feedback", "resolve PR review comments", "handle code review suggestions", or "implement reviewer-requested changes". Examples: "Address the PR review comments", "Fix the review feedback on my PR", "Resolve the comments on my pull request", "Handle the code review suggestions".
+allowed-tools: Task, Bash(gh pr *), Bash(gh api *), Bash(git *)
 ---
 
 # Address PR Comments
@@ -60,21 +60,14 @@ Ask the user which changes they want to address. They can:
 
 ### 4. Implement Approved Changes
 
-Group the approved changes by file path. For each file (or group of related files):
+**IMPORTANT**: Launch all subagents in parallel by making multiple Task tool calls in a single message. Do not wait for one to complete before launching the next.
 
-1. Launch a **general-purpose subagent** via the Task tool
-2. Provide the subagent with:
-   - The file path
-   - The specific changes to make (comment body + diff context OR the portion of the comment delineated as being an AI prompt)
-   - Instructions to read the file and make the changes
-3. Instruct the subagent to:
-   - Read the current file contents
-   - Implement the requested change(s) for that file
-   - Report back what was changed
+Group the approved changes by file path. For each file (or group of related files), launch a **general-purpose subagent** via the Task tool and provide it with:
+- The file path
+- The specific changes to make (comment body + diff context, or the portion of the comment delineated as being an AI prompt)
+- Instructions to read the file, implement the requested change(s), and report back what was changed
 
 For general comments not tied to a specific file, group them together and assign them to a single general-purpose subagent.
-
-**IMPORTANT**: Launch all subagents in parallel by making multiple Task tool calls in a single message. Do not wait for one to complete before launching the next.
 
 ### 5. Resolve Comments
 
