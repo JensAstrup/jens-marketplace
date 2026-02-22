@@ -9,6 +9,8 @@ allowed-tools: Bash(gh pr *), Bash(gh api *), Bash(git *)
 
 Retrieve all review comments on the current branch's pull request, present a summary of each requested change for user approval, then implement approved changes using subagents grouped by file.
 
+Review the workflow steps below and create a to-do list to ensure each item is completed during execution
+
 ## Workflow
 
 ### 1. Identify the Pull Request
