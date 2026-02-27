@@ -101,6 +101,60 @@ This workflow:
 
 ---
 
+### github
+
+Address PR review comments by implementing requested changes directly from the command line.
+
+**Command:** `/address-comments`
+
+**What it does:**
+- Fetches all open review comments from the current branch's pull request
+- Presents a numbered summary of requested changes for your approval
+- Implements approved changes using parallel subagents grouped by file
+- Resolves comment threads on GitHub after each change is implemented
+- Optionally runs `/write-tests changes` if the write-tests plugin is installed
+- Reports a final summary of all addressed comments and modified files
+
+**Workflow:**
+1. Detects the open PR for the current branch (exits gracefully if none exists)
+2. Fetches inline review comments and top-level PR comments via `gh api`
+3. Filters out already-resolved comments and pure questions
+4. Presents changes for user approval (approve all, select by number, or reject)
+5. Launches parallel general-purpose subagents — one per file — to implement changes
+6. Resolves corresponding GitHub review threads via `gh api`
+7. Optionally generates tests for the implemented changes
+8. Reports number of comments addressed, files modified, and any failures
+
+**Allowed tools:** `gh pr *`, `gh api *`, `git *`
+
+---
+
+### codebase-research
+
+Provides three specialized **agents** for navigating and understanding codebases. These agents are available as `subagent_type` values when using the Task tool, and Claude will use them automatically when appropriate.
+
+**Agents:**
+
+**`codebase-analyzer`** — Analyzes how code works
+- Traces data flow and method calls with precise `file:line` references
+- Documents business logic, validation, error handling, and algorithms as they exist today
+- Produces structured analysis reports with entry points, core implementation, and key patterns
+- Use when you need to understand the internals of a specific component or feature
+
+**`codebase-locator`** — Finds where code lives
+- Locates files and directories relevant to a feature or topic using Grep, Glob, and LS
+- Categorizes results by purpose: implementation, tests, configuration, type definitions, documentation
+- Returns structured file maps grouped by role — without reading file contents
+- Use when you need a map of the codebase, not an analysis of it
+
+**`codebase-pattern-finder`** — Finds code patterns with examples
+- Like `codebase-locator`, but also reads files to extract concrete code snippets
+- Returns pattern catalogs with actual code, file:line references, and contextual notes
+- Covers API patterns, data patterns, component patterns, and testing patterns
+- Use when you need existing examples to model new code after
+
+---
+
 ## Contributing
 
 Have ideas for new plugins or improvements? Contributions are welcome! Please feel free to submit issues or pull requests.
