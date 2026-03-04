@@ -21,7 +21,7 @@ Run linters and write or update tests for your code changes.
 
 **Commands:**
 - `/lint changes` - Run linter on all staged and unstaged changes and fix all warnings/errors
-- `/lint branch` - Run linter on all files changes in the current branch and fix all warnings/errors
+- `/lint branch` - Run linter on all files changed in the current branch and fix all warnings/errors
 - `/write-tests changes` - Write tests for staged and unstaged changes only
 - `/write-tests branch` - Write tests for all changes on the current branch (compared to default branch)
 

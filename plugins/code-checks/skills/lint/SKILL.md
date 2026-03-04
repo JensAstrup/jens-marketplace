@@ -13,9 +13,9 @@ Run linter on $ARGUMENTS[0]:
 **changes**: All unstaged and staged files
 **branch**: All files changed in the current branch
 
-If the argument 'changes', 'branches', or some definition of files to lint is not provided, respond with:
+If the argument 'changes', 'branch', or some definition of files to lint is not provided, respond with:
 
-> "Please specify the scope for test generation:
+> "Please specify the scope for linting:
 > - `/lint changes` - Fix lint errors/warnings on staged and unstaged changes
 > - `/lint branch` - Fix lint errors/warnings for all changes on the current branch
 
