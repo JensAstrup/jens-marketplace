@@ -101,7 +101,7 @@ Provide a summary that includes:
   | Test file path | Number of tests created/updated | Final State (pass or fail) |
   |----------------|----------------------------------|----------------------------|
 
-- Following the table, provide a list of key changes made to tests. 
+- Following the table, provide a list of key changes made to tests.
 
 Example:
 

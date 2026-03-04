@@ -1,17 +1,27 @@
 ---
-name: lint-changes
+name: lint
 description: >-
   Run linter on all staged and unstaged changes and fix all warnings/errors. Use when the user asks to lint their changes, run the linter and fix errors, fix lint issues in staged files, or check changes for lint warnings.
 context: fork
+argument-hint: "[changes|branch]"
+allowed-tools: Bash(yarn lint *)
 ---
 
 # lint-changes
 
-Run linter on all staged and unstaged changes and fix all warnings/errors
+Run linter on $ARGUMENTS[0]:
+**changes**: All unstaged and staged files
+**branch**: All files changed in the current branch
+
+If the argument 'changes', 'branches', or some definition of files to lint is not provided, respond with:
+
+> "Please specify the scope for test generation:
+> - `/lint changes` - Fix lint errors/warnings on staged and unstaged changes
+> - `/lint branch` - Fix lint errors/warnings for all changes on the current branch
 
 ---
 
-I need you to run the linter on all staged and unstaged changes in this repository and fix all warnings and errors.
+I need you to run the linter on the relevant files and fix all warnings and errors.
 
 Please follow these steps:
 
