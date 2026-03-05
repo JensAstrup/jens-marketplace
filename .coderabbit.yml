@@ -1,6 +1,8 @@
 # Enable experimental features (currently not using any specific early_access features)
 early_access: true
 
+inheritance: true
+
 chat:
   # CodeRabbit will automatically respond to @coderabbitai mentions in PR comments
   auto_reply: true
