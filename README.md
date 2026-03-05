@@ -15,14 +15,20 @@ Once added, you can install individual plugins from this marketplace using the s
 
 ## Available Plugins
 
-### lint-changes
+### code-checks
 
-Automatically run linters on all staged and unstaged changes, and fix warnings and errors across your codebase.
+Run linters and write or update tests for your code changes.
 
-**Command:** `/lint-changes`
+**Commands:**
+- `/lint changes` - Run linter on all staged and unstaged changes and fix all warnings/errors
+- `/lint branch` - Run linter on all files changed in the current branch and fix all warnings/errors
+- `/write-tests changes` - Write tests for staged and unstaged changes only
+- `/write-tests branch` - Write tests for all changes on the current branch (compared to default branch)
+
+#### lint
 
 **What it does:**
-- Runs your project's linter (e.g., `yarn lint --fix`) on all staged and unstaged changes
+- Runs your project's linter (e.g., `yarn lint --fix`)
 - Automatically fixes what can be auto-corrected
 - Spawns parallel agents to fix remaining issues file-by-file
 - Verifies all fixes and provides a comprehensive summary
@@ -49,15 +55,7 @@ Automatically run linters on all staged and unstaged changes, and fix warnings a
 - Missing semicolons or trailing commas
 - Inconsistent quote styles
 
----
-
-### write-tests
-
-Write or update tests for your code changes with intelligent scope detection.
-
-**Commands:**
-- `/write-tests changes` - Write tests for staged and unstaged changes only
-- `/write-tests branch` - Write tests for all changes on the current branch (compared to default branch)
+#### write-tests
 
 **What it does:**
 - Analyzes your code changes and identifies files that need test coverage
@@ -82,7 +80,7 @@ This workflow:
 /write-tests branch
 ```
 This workflow:
-1. Compares the current branch against develop
+1. Compares the current branch against the default branch
 2. Identifies all files changed on the branch
 3. Ensures comprehensive test coverage for all branch modifications
 4. Useful for pre-PR test coverage verification
