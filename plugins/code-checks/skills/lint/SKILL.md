@@ -7,7 +7,7 @@ argument-hint: "[changes|branch]"
 allowed-tools: Bash(yarn lint *)
 ---
 
-# lint-changes
+# lint
 
 Run linter on $ARGUMENTS[0]:
 **changes**: All unstaged and staged files
