@@ -34,7 +34,7 @@ reviews:
   # Include summary of all changed files
   changed_files_summary: true
 
-  # Don't automatically request changes on the PR (just leave comments)
+  # Request changes workflow: auto-approve once all CodeRabbit comments are resolved
   request_changes_workflow: true
 
   path_instructions:
