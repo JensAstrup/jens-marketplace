@@ -8,7 +8,7 @@ when switching between devices.
 To add this marketplace to your Claude Code installation, run:
 
 ```bash
-/plugin marketplace add JensAstrup/jens-marketplace
+/plugin marketplace add JensAstrup/claude-plugin-marketplace
 ```
 
 Once added, you can install individual plugins from this marketplace using the standard plugin installation commands.
