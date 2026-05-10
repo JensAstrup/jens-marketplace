@@ -6,6 +6,6 @@
   "description": "A collection of plugins for Jens' projects",
   "repository": "https://github.com/jensastrup/jens-marketplace",
   "homepage": "https://github.com/jensastrup/jens-marketplace",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "strict": true
 }
