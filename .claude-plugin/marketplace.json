@@ -8,18 +8,19 @@
   "homepage": "https://github.com/jensastrup/jens-marketplace",
   "version": "2.1.0",
   "strict": true,
+  "source": "./plugins",
   "plugins": [
     {
       "name": "github",
-      "source": "./plugins/github-plugin"
+      "source": "formatter"
     },
     {
       "name": "code-checks",
-      "source": "./plugins/code-checks"
+      "source": "formatter"
     },
     {
       "name": "codebase-research",
-      "source": "./plugins/codebase-research"
+      "source": "formatter"
     }
   ]
 }
