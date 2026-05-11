@@ -7,5 +7,22 @@
   "repository": "https://github.com/jensastrup/jens-marketplace",
   "homepage": "https://github.com/jensastrup/jens-marketplace",
   "version": "2.1.0",
-  "strict": true
+  "strict": true,
+  "plugins": [
+    {
+      "name": "github",
+      "version": "1.0.2",
+      "source": "plugins/github-plugin"
+    },
+    {
+      "name": "code-checks",
+      "version": "1.0.0",
+      "source": "plugins/code-checks"
+    },
+    {
+      "name": "codebase-research",
+      "version": "1.0.0",
+      "source": "plugins/codebase-research"
+    }
+  ]
 }
