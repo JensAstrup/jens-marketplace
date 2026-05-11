@@ -60,7 +60,7 @@ Ask the user which changes they want to address. They can:
 
 ### 4. Implement Approved Changes
 
-**IMPORTANT**: Launch subagents in parallel, one per file being modified/created. Do not wait for one to complete before launching the next.
+**IMPORTANT**: Launch subagents in parallel. Do not wait for one to complete before launching the next.
 
 Group the approved changes by file path. For each file (or group of related files), launch a **general-purpose subagent** via the Task tool and provide it with:
 - The file path
