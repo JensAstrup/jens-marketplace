@@ -2,6 +2,7 @@
   "name": "code-checks",
   "description": "Run linter and write or update tests for staged/unstaged changes or branch changes",
   "version": "1.0.0",
+  "strict": true,
   "author": {
     "name": "Jens Astrup"
   },

@@ -6,23 +6,20 @@
   "description": "A collection of plugins for Jens' projects",
   "repository": "https://github.com/jensastrup/jens-marketplace",
   "homepage": "https://github.com/jensastrup/jens-marketplace",
-  "version": "2.1.0",
-  "strict": true,
+  "version": "3.0.0",
+  "source": "./plugins",
   "plugins": [
     {
       "name": "github",
-      "version": "1.0.2",
-      "source": "plugins/github-plugin"
+      "source": "formatter"
     },
     {
       "name": "code-checks",
-      "version": "1.0.0",
-      "source": "plugins/code-checks"
+      "source": "formatter"
     },
     {
       "name": "codebase-research",
-      "version": "1.0.0",
-      "source": "plugins/codebase-research"
+      "source": "formatter"
     }
   ]
 }

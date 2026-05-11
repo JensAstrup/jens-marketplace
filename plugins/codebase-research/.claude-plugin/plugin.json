@@ -2,6 +2,7 @@
   "name": "codebase-research",
   "description": "Specialized agents for exploring and understanding codebases - analyze implementations, locate files, and find patterns",
   "version": "1.0.0",
+  "strict": true,
   "author": {
     "name": "Jens Astrup"
   },
