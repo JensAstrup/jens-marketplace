@@ -12,17 +12,17 @@
     {
       "name": "github",
       "version": "1.0.2",
-      "source": "plugins/github-plugin"
+      "source": "./plugins/github-plugin"
     },
     {
       "name": "code-checks",
       "version": "1.0.0",
-      "source": "plugins/code-checks"
+      "source": "./plugins/code-checks"
     },
     {
       "name": "codebase-research",
       "version": "1.0.0",
-      "source": "plugins/codebase-research"
+      "source": "./plugins/codebase-research"
     }
   ]
 }
