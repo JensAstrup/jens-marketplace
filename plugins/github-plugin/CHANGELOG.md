@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 - 2026-05-10
+
+- Refined instructions to ensure subagent spawning
+
 ## 1.0.1 - 2026-02-20
 
 ### Changed
