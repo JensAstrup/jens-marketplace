@@ -16,9 +16,9 @@ See "Plugins reference" in Documentation section for full structure (including c
 
 ## Plugin Versioning
 
-Plugin versions are tracked in two places that must stay in sync:
-1. `.claude-plugin/marketplace.json` - the `version` field for each plugin entry
-2. `plugins/<plugin-name>/CHANGELOG.md` - the latest version heading
+Plugin versions are tracked in a plugin.json and changelog that must be updated:
+1. `plugins/<plugin-name>/CHANGELOG.md` - the latest version heading
+2. `.claude-plugin/plugin.json` - metadata about the field
 
 ## Skills
 
